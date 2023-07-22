@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SAML Response Downloader</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 15px;
+      background-color: #f9f9f9;
+      margin: 0;
+      color: #333; /* Dark gray for the body text */
+    }
+
+    h1 {
+      color: #00ccff; /* Dodger Blue for the heading */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Text shadow for a subtle glow effect */
+      margin-bottom: 10px;
+      font-size: 20px; /* Increased font size */
+      animation: fadeInDown 1s ease; /* Animation for the heading */
+    }
+
+    #saveButton {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007bff; /* Dodger Blue for the button background */
+      color: white; /* White for the button text */
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+      box-shadow: 0 4px 8px rgba(30, 144, 255, 0.2); /* Dodger Blue with opacity */
+      transition: background-color 0.3s ease;
+    }
+
+    /* Hover effect for the button */
+    #saveButton:hover {
+      background-color: #0056b3; /* Darker shade of Dodger Blue */
+      box-shadow: 0 6px 12px rgba(30, 144, 255, 0.3); /* Slightly darker shadow */
+    }
+
+    /* Container for the button and heading */
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    /* Styling for the button and heading */
+    .content {
+      background-color: #ffffff; /* White */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Black with opacity */
+    }
+
+    /* Center the button */
+    .center-button {
+      display: flex;
+      justify-content: center;
+    }
+
+    /* Animation keyframes for the heading */
+    @keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <h1>SAML Response</h1>
+      <!-- Replace the button text with something more appropriate if needed -->
+      <div class="center-button">
+        <button id="saveButton">Close</button>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
